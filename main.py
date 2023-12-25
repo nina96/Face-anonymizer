@@ -83,7 +83,7 @@ with mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence
         while ret:
             frame= process_img(frame, face_detection)
             cv2.imshow('frame',frame)
-            if cv2.waitKey(25) & 0xFF==ord('q'):
+            if cv2.waitKey(40) & 0xFF==ord('q'):
                 break
             ret,frame=cap.read()
 
